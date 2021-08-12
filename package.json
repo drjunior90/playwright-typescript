@@ -1,0 +1,21 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "Playwright Demo",
+  "main": "index.js",
+  "author": "Daniel Junior",
+  "license": "MIT",
+  "scripts": {
+    "install-browsers": "npx playwright install",
+    "test": "npx playwright test",
+    "test-chromium": "npx playwright test --project chromium",
+    "test-firefox": "npx playwright test --project firefox",
+    "test-webkit": "npx playwright test --project webkit",
+    "codegen": "npx playwright codegen https://todomvc.com/examples/react/#/",
+    "debug": "set PWDEBUG=1&& npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.13.1",
+    "prettier": "^2.3.2"
+  }
+}
